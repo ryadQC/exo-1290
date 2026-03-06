@@ -1,0 +1,18 @@
+name: exo-1290
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+
+  lister-runner:
+    name: Lister le répertoire racine du runner
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Lister la racine du runner
+        run: ls -la /
+
+  
